@@ -34,10 +34,14 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       {/* Header */}
       <Header theme={theme} toggleTheme={toggleTheme} />
+      {/* Blurry Circles */}
+      <div className="hidden md:block absolute top-1/2 left-[-150px] w-[300px] h-[300px] bg-blurCircle filter blur-[50px] rounded-full"></div>
+      <div className="hidden md:block absolute top-1/2 right-0 w-[300px] h-[300px] bg-blurCircle filter blur-[50px] rounded-full"></div>
+      <div className="hidden md:block absolute top-0 left-[50%] transform -translate-x-1/2 w-[300px] h-[300px] bg-blurCircle filter blur-[50px] rounded-full"></div>
 
       {/* Main Section */}
-      <main className="flex flex-col items-center justify-center flex-grow text-center px-4 py-10">
-        <div className="text-gray-900 dark:text-white  flex flex-col md:flex-row items-center justify-center h-screen px-4 md:px-0">
+      <main className="flex flex-col items-center justify-center flex-grow text-center">
+        <div className="text-gray-900 dark:text-white flex flex-col md:flex-row items-center justify-center px-4 md:px-0">
           <Discover />
           <Form />
         </div>

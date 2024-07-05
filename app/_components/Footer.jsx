@@ -15,7 +15,7 @@ function Footer() {
           <p className="text-sm">
             &copy; 2024 Finitc Ltd. All Rights Reserved.
           </p>
-          <div className="ml-2 md:ml-8">
+          <div className="ml-2">
             <a href="#" className="text-sm text-gray-400 hover:text-white mr-4">
               Privacy Policy
             </a>
